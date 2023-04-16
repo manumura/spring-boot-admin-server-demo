@@ -5,7 +5,7 @@ spring:
   application:
     name: spring-boot-admin-server
   config:
-    import: file:.env[.properties]
+    import: optional:file:.env[.properties]
   boot:
     admin:
       ui:
