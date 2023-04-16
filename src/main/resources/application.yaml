@@ -1,0 +1,17 @@
+server:
+  port: 8093
+
+spring:
+  application:
+    name: spring-boot-admin-server
+  config:
+    import: file:.env[.properties]
+  boot:
+    admin:
+      ui:
+        enable-toasts: true
+        available-languages: en,fr
+
+security:
+  username: ${SBA_USER}
+  password: ${SBA_PASSWORD}
